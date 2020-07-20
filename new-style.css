@@ -1,0 +1,196 @@
+body {
+  background-color: #f5f6fa;
+}
+
+.main {
+  min-height: 900px;
+  /* max-width: 1280px; */
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.map-container {
+  height: 500px;
+}
+
+.header-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#map {
+  border-radius: 12px;
+  overflow: hidden;
+}
+#myChart {
+  max-height: 300px;
+}
+.chart-container {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.chart-container .col {
+  background-color: #eff2f6;
+  border-radius: 12px;
+}
+
+.linear-chart {
+  height: 100%;
+}
+
+.title-container h2 {
+  color: #fc3c3c;
+  margin-bottom: 0;
+}
+
+.title-container h4 {
+  text-transform: uppercase;
+  color: #cacbcf;
+}
+
+.stats-container .card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.stats-container .card-body {
+  padding: 1rem;
+}
+
+.stats-container .card-title {
+  color: #695d5c;
+  font-weight: 400;
+}
+
+.stats-container .card-subtitle {
+  font-weight: 600;
+}
+
+.stats-container .total {
+  font-size: 0.8rem;
+}
+
+.side-panel-container {
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+  background-color: white;
+  box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.5);
+  padding-top: 15px;
+}
+
+.total-number,
+.cases i {
+  color: #cc1034;
+}
+
+.recovered-number,
+.recovered i {
+  color: #7fd922;
+}
+
+.deaths-number,
+.deaths i {
+  color: #fa5575;
+}
+
+.cases-table-container h4,
+.chart-container h4 {
+  color: #6a5d5d;
+  font-weight: 400;
+}
+
+.country-data .table td {
+  padding: 0.5rem;
+  border: none;
+}
+
+.card.active > .tab-selection {
+  opacity: 1;
+}
+
+.tab-selection {
+  height: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+.card:hover > .tab-selection {
+  opacity: 1;
+}
+
+.cases .tab-selection {
+  background-color: #cc1034;
+}
+
+.recovered .tab-selection {
+  background-color: #7fd922;
+}
+
+.deaths .tab-selection {
+  background-color: #fa5575;
+}
+
+.newsfeed-container {
+  height: 450px;
+  overflow: scroll;
+}
+/* .newsfeed {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+ */
+.newsfeed-container .card {
+  height: 100%;
+
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.newsfeed-container:hover .card {
+  filter: blur(5px);
+  transform: scale(0.85);
+  opacity: 0.7;
+}
+.newsfeed-container .card:hover {
+  filter: blur(0px);
+  transform: scale(1.05);
+  opacity: 1;
+}
+/* .newsfeed-container .card-title {
+  height: 90px;
+} */
+.btn-read {
+  position: relative;
+  border: 1px solid #87e622;
+  background-color: #87e622;
+  color: #146811;
+  /* padding: 10px 20px; */
+  border-radius: 40px;
+  /* margin: 20px auto 0; */
+  bottom: 10px;
+}
+.btn-read:hover {
+  background-color: #73ca15;
+}
+.newsfeed-container p {
+  height: 75px;
+  overflow: hidden;
+}
+/* .healthsafety-container .image-container {
+} */
+.main-info h4 {
+  font-weight: 400;
+}
