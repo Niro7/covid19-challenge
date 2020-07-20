@@ -157,7 +157,7 @@ body {
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
+  transition: 0.4s;
 }
 /* .newsfeed-container:hover .card {
   filter: blur(5px);
@@ -194,3 +194,13 @@ body {
 .main-info h4 {
   font-weight: 400;
 }
+.health-info-container img {
+  transition: 0.4s;
+}
+
+.health-info-container img:hover {
+  filter: blur(0px);
+  transform: scale(1.05);
+  opacity: 1;
+}
+
