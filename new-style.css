@@ -143,7 +143,6 @@ body {
 
 .newsfeed-container {
   height: 450px;
-  overflow: scroll;
 }
 /* .newsfeed {
   padding-left: 20px;
@@ -166,14 +165,14 @@ body {
 } */
 .newsfeed-container .card:hover {
   filter: blur(0px);
-  transform: scale(1.05);
+  transform: scale(1.02);
   opacity: 1;
 }
 /* .newsfeed-container .card-title {
   height: 90px;
 } */
+
 .btn-read {
-  position: relative;
   border: 1px solid #87e622;
   background-color: #87e622;
   color: #146811;
@@ -181,9 +180,13 @@ body {
   border-radius: 40px;
   /* margin: 20px auto 0; */
   bottom: 10px;
+  outline: none;
 }
 .btn-read:hover {
   background-color: #73ca15;
+}
+.newsfeed-container .btn-read {
+  position: relative;
 }
 .newsfeed-container p {
   height: 75px;
@@ -200,7 +203,9 @@ body {
 
 .health-info-container img:hover {
   filter: blur(0px);
-  transform: scale(1.05);
+  transform: scale(1.02);
   opacity: 1;
 }
-
+.news-items-container {
+  overflow-y: scroll;
+}
