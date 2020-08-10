@@ -192,19 +192,21 @@ const showDataOnMap = (data, casesType = "cases") => {
 
     var html = `
           <div class="info-container">
-              <div class="info-flag" style="background-image: url(${country.countryInfo.flag});">
+              <div class="info-flag" style="background-image: url(${
+                country.countryInfo.flag
+              });">
               </div>
               <div class="info-name">
                   ${country.country}
               </div>
               <div class="info-confirmed">
-                  Total: ${country.cases}
+                  Total: ${numeral(country.cases).format("0,0")}
               </div>
               <div class="info-recovered">
-                  Recovered: ${country.recovered}
+                  Recovered: ${numeral(country.recovered).format("0,0")}
               </div>
               <div class="info-deaths">   
-                  Deaths: ${country.deaths}
+                  Deaths: ${numeral(country.deaths).format("0,0")}
               </div>
           </div>
       `;
