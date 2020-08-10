@@ -229,3 +229,7 @@ body {
   background-color: darkgrey;
   outline: 1px solid slategrey;
 }
+.news-items-container::-webkit-scrollbar:horizontal,
+.country-data::-webkit-scrollbar:horizontal {
+  height: 0.5em;
+}
