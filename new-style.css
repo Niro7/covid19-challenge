@@ -220,7 +220,12 @@ body {
 }
 .news-items-container::-webkit-scrollbar-thumb,
 .country-data::-webkit-scrollbar-thumb {
+  background-color: rgb(202, 202, 202);
+  outline: 1px solid rgb(158, 174, 190);
+  border-radius: 10px;
+}
+.news-items-container::-webkit-scrollbar-thumb:hover,
+.country-data::-webkit-scrollbar-thumb:hover {
   background-color: darkgrey;
   outline: 1px solid slategrey;
-  border-radius: 10px;
 }
